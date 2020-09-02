@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="landing">
+
+    </div>
+    <div class="showcase">
+        <div class="toggle">
+            <div class="toggles">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div class="contents">
+            <div class="content">
+                <h2>Hello this is content</h2>
+                <p>Tbh will this even work lets see</p>
+                <small>Please work</small>
+            </div>
+            <div class="content">
+                <h2>Hello this is content</h2>
+                <p>Tbh will this even work lets see</p>
+                <small>Please work</small>
+            </div>
+            <div class="content">
+                <h2>Hello this is content</h2>
+                <p>Tbh will this even work lets see</p>
+                <small>Please work</small>
+            </div>
+        </div>
+    </div>
+    <div style="min-height: 100vh;">
+        hell
+    </div>
+
+    <script src="./parallax.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script>
+    let controller = new ScrollMagic.Controller();
+
+    let scene = new ScrollMagic.Scene({triggerElement: ".toggle", duration: "250%"})
+            .setPin(".toggle")
+            .addTo(controller)
+</script>
+    <script>
+        // let divs = document.querySelectorAll(".toggles div");
+        // window.addEventListener("scroll", (e)=>{
+        //     console.log(window.scrollY)
+        //     if(window.scrollY >= 369 && window.scrollY < 1144){
+        //         divs[0].style.backgroundColor = "blue";
+        //         divs[1].style.backgroundColor = "black";
+        //         divs[2].style.backgroundColor = "black";
+                
+        //     } else if(window.scrollY >= 1144 && window.scrollY < 1758){
+        //         divs[0].style.backgroundColor = "black";
+        //         divs[1].style.backgroundColor = "blue"
+        //         divs[2].style.backgroundColor = "black";
+
+        //     } else if(window.scrollY >= 1758 && window.scrollY < 2440){
+        //         divs[0].style.backgroundColor = "black";
+        //         divs[1].style.backgroundColor = "black";
+        //         divs[2].style.backgroundColor = "blue"
+        //     }
+        //     if(window.scrollY==0){
+        //         divs[0].style.backgroundColor = "black";
+
+        //     }
+        // })
+        // let rellax = new Rellax(".rellax")
+    </script>
+</body>
+</html>
