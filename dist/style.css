@@ -102,7 +102,6 @@ nav {
   transform: translatex(-150%);
   transition: transform 0.1s ease;
   top: 80px;
-  bottom: 0px;
   padding-right: 16px;
   z-index: 100;
 }
