@@ -275,7 +275,7 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 110vh;
   flex-direction: column;
 }
 .myProject .imgContainer{
@@ -417,7 +417,7 @@ nav ul li a:hover{
   font-size: 2rem;
 }
 .skills{
-    width: 80%;
+    width: 100%;
 }
 .skill{
     width: 30%;
@@ -454,12 +454,22 @@ nav ul li a:hover{
   font-size: 1.2rem;
 }
 }
+@media screen and (max-width:900px){
+  .skills{
+    width: 100%;
+}
+}
+@media screen and (max-width:325px){
+  .skill{
+    width: 50%;
+  }
+}
 @media screen and (max-width:450px){
-    .skill{
-        width: 50%;
-    }
     .skill-title {
         font-size: 1.6rem;
         color: white;
+    }
+    .skill p{
+      font-size: 14px;
     }
 }
