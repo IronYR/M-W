@@ -102,7 +102,7 @@ nav {
   transform: translatex(-150%);
   transition: transform 0.1s ease;
   top: 80px;
-  bottom: 0px;
+  /* bottom: 0px; */
   padding-right: 16px;
   z-index: 100;
 }
@@ -321,6 +321,7 @@ nav ul li a:hover{
   align-items: center;
   flex-direction: column;
   background-color: black;
+  position: relative;
 }
 .about p{
   font-size: 1.5rem;
@@ -331,7 +332,7 @@ nav ul li a:hover{
   margin-bottom: 50px
 }
 .linksContainer{
-  margin: 50px;
+  margin: 10px;
 }
 .links{
   display: flex;
@@ -418,10 +419,14 @@ nav ul li a:hover{
   font-size: 2rem;
 }
 .skills{
-    width: 80%;
+    width: 100%;
 }
 .skill{
     width: 30%;
+}
+.skill-title {
+  font-size: 1.6rem;
+  color: white;
 }
 .float:nth-of-type(1){
     transform: rotate(25deg);
@@ -455,12 +460,21 @@ nav ul li a:hover{
   font-size: 1.2rem;
 }
 }
+@media screen and (max-width:300px){
+  .skill{
+    width: 50%;
+  }
+}
+
 @media screen and (max-width:450px){
-    .skill{
+    /* .skill{
         width: 50%;
+    } */
+    .skill p{
+      font-size: 14px;
     }
-    .skill-title {
+    /* .skill-title {
         font-size: 1.6rem;
         color: white;
-    }
+    } */
 }
